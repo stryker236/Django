@@ -1,0 +1,13 @@
+{% extends 'nav.html' %}
+{% block title %}UPDATE{% endblock %}
+
+{% block content %}
+    <h1>Update Task</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title" value="{{ task.title }}">
+        <input id="completed" type="checkbox" name="completed" {% if task.completed %}checked{% endif %}>
+        <input type="submit" value="Update">
+    </form>
+{% endblock %}

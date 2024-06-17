@@ -1,0 +1,16 @@
+{% extends 'nav.html' %}
+{% block title %}CREATE{% endblock %}
+
+{% block content %}
+<h1>Create Task</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title">
+        <br>
+        <label for="description">Description:</label>
+        <input id="description" type="text" name="description">
+        <br>
+        <input type="submit" value="Create">
+    </form>
+{% endblock %}

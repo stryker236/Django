@@ -1,0 +1,5 @@
+-Nas settings.py onde está a pasta com os ficheiros estáticos e a pasta dos ficheiros template 
+	-css
+	-imagens
+	-html
+-
